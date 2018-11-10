@@ -1,0 +1,23 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>首页</title>
+</head>
+<body>
+   我是首页 11
+   <p th:text="${username}"></p>
+   <p th:text="${nick}"></p>
+   <ul th:each="item:${list}">
+   	<li th:text="${item}"></li>
+   </ul>
+	
+   <p th:if="${flag}">1</p>	    
+   <p th:unless="${flag}">2</p>	    
+
+   <ul th:switch="${flag}">
+   	  <li th:case="true">1</li>
+   	  <li th:case="*">2</li>
+   </ul>
+
+
+</body>
+</html>
