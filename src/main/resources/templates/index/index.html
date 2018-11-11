@@ -18,6 +18,10 @@
    	  <li th:case="*">2</li>
    </ul>
    <p th:text="${sex==1?'男':'女'}"></p>
-   
+
+   <ul th:each="item:${users}">
+      <li th:text="${item.userName}"></li>
+      <li th:text="${item.password}"></li>
+   </ul>
 </body>
 </html>
