@@ -20,7 +20,7 @@ public class WebController {
 		model.addAttribute("nick","我是昵称");
 		model.addAttribute("list",list);
 		model.addAttribute("flag",false);
-		model.addAttribute("flag",false);
+		model.addAttribute("sex",0);
 		 return "/index/index";
 	}
 
