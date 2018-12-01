@@ -32,9 +32,9 @@ public class WebController {
 		User user=new User();
 		user.setPassword("123456");
 		user.setUserName("张三");
-//		dao.save(user);
+		dao.save(user);
 		List<User> users=dao.findAll();
-//		System.out.println("users:::"+users.size());
+		System.out.println("users:::"+users.size());
 		model.addAttribute("users", users);
 		return "/index/index";
 	}
